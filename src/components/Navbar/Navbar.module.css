@@ -1,0 +1,30 @@
+.container {
+    /*background-color: orangered;*/
+    width: 100%;
+    display: flex;
+}
+
+.container .content {
+    /*background-color: deepskyblue;*/
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.container #blog-name {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container .nav-left {
+    display: flex;
+}

@@ -1,0 +1,46 @@
+.container {
+    /*background-color: brown;*/
+    padding: 10px 0;
+}
+
+.container .items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container .active{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container .inactive {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.container .items:last-child {
+    margin-right: 10px;
+}
+
+.container .items .item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-bottom: 3px solid transparent;  /* 设置一个初始状态的透明边框 */
+    transition: border-color 0.5s ease;    /* 仅对border-color进行过渡 */
+}
+
+.container .items .item:hover {
+    cursor: pointer;
+}
+
+.container .items .item.active:hover {
+    border-bottom-color: white;
+}
+
+.container .item.inactive:hover {
+    border-bottom-color: black;
+}
